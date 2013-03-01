@@ -21,12 +21,13 @@ awk -F $'\t' '{ print $2 }' < data/all_on_one_line.txt | sort | uniq > data/name
 echo "Creating list of names and emails from users.txt"
 awk -F $'\t' '{ print $2 "	" $3 }' < data/users.txt > data/names_and_emails.txt
 
-echo "Getting email addresses of all presenters..."
-while read line
+echo "Concatenating email addresses with other data..."
+while read name rest
 do
-	grep $line data/names_and_emails.txt
+	name_plus_email=$(grep $name data/names_and_emails.txt)
+	echo $name_plus_email "	" $rest
 
-done < data/names_only.txt > data/only_relevant_names_and_emails.txt
+done < data/relevant_details.txt > data/concatenated_list.txt
 
 
 echo "Tidying up..."
