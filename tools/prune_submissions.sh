@@ -12,8 +12,8 @@ do
         echo "$line	$line2"
 done < data/list_without_change.txt > data/all_on_one_line.txt
 
-echo "Printing session, presenter and status..."
-awk -F $'\t' '{ print $1 " " $2 $6 }' < data/all_on_one_line.txt > data/relevant_details.txt
+echo "Printing presenter, session and status in order of presenters..."
+awk -F $'\t' '{ print $2 " " $1 $6 }' < data/all_on_one_line.txt | sort > data/relevant_details.txt
 
 echo "Creating list of names..."
 awk -F $'\t' '{ print $2 }' < data/all_on_one_line.txt | sort | uniq > data/names_only.txt
