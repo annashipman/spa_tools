@@ -14,3 +14,6 @@ done < data/list_without_change.txt > data/all_on_one_line.txt
 
 echo "Printing session, presenter and status..."
 awk -F $'\t' '{ print $1 " " $2 $6 }' < data/all_on_one_line.txt > data/relevant_details.txt
+
+echo "Tidying up..."
+rm data/list_without_change.txt data/all_on_one_line.txt
