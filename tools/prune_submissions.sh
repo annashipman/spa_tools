@@ -15,9 +15,6 @@ done < data/list_without_change.txt > data/all_on_one_line.txt
 echo "Printing presenter, session and status in order of presenters..."
 awk -F $'\t' '{ print $2 " " $1 $6 }' < data/all_on_one_line.txt | sort > data/relevant_details.txt
 
-echo "Creating list of names..."
-awk -F $'\t' '{ print $2 }' < data/all_on_one_line.txt | sort | uniq > data/names_only.txt
-
 echo "Creating list of names and emails from users.txt"
 awk -F $'\t' '{ print $2 "	" $3 }' < data/users.txt > data/names_and_emails.txt
 
@@ -31,4 +28,4 @@ done < data/relevant_details.txt > data/concatenated_list.txt
 
 
 echo "Tidying up..."
-rm data/list_without_change.txt data/all_on_one_line.txt data/names_only.txt data/names_and_emails.txt
+rm data/list_without_change.txt data/all_on_one_line.txt data/names_and_emails.txt data/relevant_details.txt
