@@ -21,7 +21,7 @@ awk -F $'\t' '{ print $2 "	" $3 }' < data/users.txt > data/names_and_emails.txt
 echo "Concatenating email addresses with other data..."
 while read name rest
 do
-	name_plus_email=$(grep $name data/names_and_emails.txt)
+	name_plus_email=$(grep -w $name data/names_and_emails.txt)
 	echo $name_plus_email "	" $rest
 
 done < data/relevant_details.txt > data/concatenated_list.txt
