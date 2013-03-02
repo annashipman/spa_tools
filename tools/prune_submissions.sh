@@ -22,7 +22,7 @@ echo "Concatenating email addresses with other data..."
 while read name rest
 do
 	name_plus_email=$(grep -w $name data/names_and_emails.txt)
-	echo $name_plus_email "	" $rest
+	echo "$name_plus_email "	" $rest"
 
 done < data/relevant_details.txt > data/concatenated_list.txt
 
