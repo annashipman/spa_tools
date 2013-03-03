@@ -12,4 +12,4 @@ To generate the emails, you need to create three bash scripts in the emails fold
 	emails/generate_reserve_email.sh
 	emails/generate_rejection_email.sh
 
-These each accept "$subject" "$email" "$name" "$session". 
+These each accept "$subject" "$email" "$name" "$session". Then run tool/generate_emails.sh.
