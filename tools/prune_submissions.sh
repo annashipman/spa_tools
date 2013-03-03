@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # prune submissions
+rm output/*
 
 echo "Getting rid of lines that say change..."
 awk '! /^change/ { print }' < data/allproposals.txt > output/list_without_change.txt
