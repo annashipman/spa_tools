@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#  generate rejection email
+#  generate acceptance email
 #
 #  usage: requires previous prune of submissions
 

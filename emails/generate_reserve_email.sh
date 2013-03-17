@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#  generate rejection email
+#  generate reserve email
 #
 #  usage: requires previous prune of submissions
 
