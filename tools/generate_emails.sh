@@ -17,7 +17,7 @@ do
 		subject="SPA 2013 session on reserve list"
 		emails/generate_reserve_email.sh "$subject" "$email" "$name" "$session"
 	elif [ "Rejected" = $status ]; then
-		subject="SPA 2013 session rejected"
+		subject="Your session proposal for SPA 2013"
 		emails/generate_rejection_email.sh "$subject" "$email" "$name" "$session"
 	fi
 	echo " "
