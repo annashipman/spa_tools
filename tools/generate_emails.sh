@@ -4,9 +4,7 @@ IFS=$'\t'
 
 while read name email session status
 do  
-    name=$(echo $name | sed 's/\([A-Z]\)/ \1/g')
-
-    name=$(echo $name | sed 's/^ *//g')
+    name=$(echo $name | sed 's/^\([A-Z][a-z]\+\).*$/\1/g')
     session=$(echo $session | sed 's/^ *//g')
     status=$(echo $status | sed 's/^ *//g')
 
