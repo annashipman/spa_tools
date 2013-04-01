@@ -14,7 +14,7 @@ do
 done < output/list_without_change.txt > output/all_on_one_line.txt
 
 echo "Printing presenter, session and status in order of presenters..."
-awk -F $'\t' '{ print $2 "	" $1 "	" $6 }' < output/all_on_one_line.txt | sort > output/relevant_details.txt
+awk -F $'\t' '{ print $2 "	" $1 "	" $4 }' < output/all_on_one_line.txt | sort > output/relevant_details.txt
 
 echo "Creating list of names and emails from users.txt"
 awk -F $'\t' '{ print $2 "	" $3 }' < data/users.txt > output/names_and_emails.txt
