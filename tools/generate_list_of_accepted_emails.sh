@@ -7,6 +7,6 @@ do
     
     status=$(echo $status | sed 's/^ *//g')
     if [ "Accepted" = $status ]; then
-        echo $email
+        echo -n $email
     fi
 done < output/concatenated_list.txt | sort -u
