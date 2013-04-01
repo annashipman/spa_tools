@@ -1,17 +1,17 @@
 #Tools to help process SPA programme creation
 
-## Getting a list of names, emails, sessions and statuses
+## Set up
+Copy data from this page: http://www.spaconference.org/scripts/proposals.php into data/allproposals.txt and the list of users into data/users.txt.
 
-Copy data from this page: http://www.spaconference.org/scripts/proposals.php into data/allproposals.txt and the list of users into data/users.txt, then run tools/prune_submissions.sh
+## Get list of all sessions with users and email addresses
+
+   mkdir output
+   tools/prune_submissions.sh
+
+**NB** this step is required for subsequent steps.
 
 ## Generating the emails
 
-To generate the emails, you need to create three bash scripts in the emails folder:
-
-	emails/generate_acceptance_email.sh
-	emails/generate_reserve_email.sh
-	emails/generate_rejection_email.sh
-
-These each accept $subject $email $name $session. Then run tool/generate_emails.sh.
+    tool/generate_emails.sh
 
 **NB** Note that manual checking of the emails is required before sending because the names are split on capital letters, i.e. AnnaShipman becomes Anna Shipman. This will of course not work for all types of name, for example Anna Mac Donald or Annavan Damme so checking is required.
