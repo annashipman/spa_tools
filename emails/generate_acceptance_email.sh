@@ -18,7 +18,7 @@ Email address: $email_address
 
 Dear $name,
 
-We are pleased to let you know that your session $session has been accepted for SPA 2013. 
+We are pleased to let you know that your session $session has been accepted for SPA 2013.
 
 What happens next?
 
@@ -33,9 +33,9 @@ Things that don't happen:
 1. You do not need to buy a ticket, but we will send you a link later on to register and give dietary requirements etc. If you have already purchased a ticket, please contact us to arrange a refund.
 2. Unfortunately we are not able to pay travel expenses.
 
-Things that may happen: 
+Things that may happen:
 
-At SPA we provide shepherds to some sessions to make sure they are the best they can be. This might be  when you have not presented at SPA before, or if the session seems to need some improvement. We will contact you in a few weeks if we have allocated a shepherd to your session. If you don't hear from us, but would like a shepherd regardless, please let us know. 
+At SPA we provide shepherds to some sessions to make sure they are the best they can be. This might be  when you have not presented at SPA before, or if the session seems to need some improvement. We will contact you in a few weeks if we have allocated a shepherd to your session. If you don't hear from us, but would like a shepherd regardless, please let us know.
 
 Kind regards,
 
