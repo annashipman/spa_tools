@@ -17,13 +17,14 @@ echo "Printing presenter, session and status in order of presenters..."
 awk -F $'\t' '{ print $2 "	" $1 "	" $4 }' < output/all_on_one_line.txt | sort > output/relevant_details.txt
 
 echo "Creating list of names and emails from users.txt"
-awk -F $'\t' '{ print $2 "	" $3 }' < data/users.txt > output/names_and_emails.txt
+awk '{ print $2 "	" $3 }' < data/users.txt > output/names_and_emails.txt
 
 echo "Concatenating email addresses with other data..."
 while read name rest
 do
-	name_plus_email=$(grep -w $name output/names_and_emails.txt)
-	echo "$name_plus_email "$'\t'" $rest"
+  echo $name
+  name_plus_email=$(grep -w "$name" output/names_and_emails.txt)
+  echo "$name_plus_email "$'\t'" $rest"
 
 done < output/relevant_details.txt > output/concatenated_list.txt
 
