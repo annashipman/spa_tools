@@ -18,15 +18,12 @@ Email address: $email_address
 
 Dear $name,
 
-Unfortunately we cannot include your session $session in the SPA 2013 programme. Thank you for contributing to SPA. You can read the feedback provided to see if you want to do something different next year (our own sessions also don't always make it in and feedback has helped us improve our chances). You can find the reviews in your ‘mySPA’ page: http://www.spaconference.org/scripts/myprofile.php.
+Unfortunately we cannot include your session $session in the SPA 2014 programme. We had a very high standard of submissions this year. You can read the feedback provided here http://www.spaconference.org/scripts/myprofile.php and we hope you'll consider submitting again next year.
 
-We hope to see you at SPA regardless. We've done our best to keep costs down, and create a programme that offers great value.
+Thank you for your contribution, and we really hope to see you at SPA 2014 in June.
 
 Kind regards,
 
-Anna Shipman & Robert Chatley
-SPA Programme Chairs - 2013
-http://www.spaconference.org
 EOF
 
 exit 0
