@@ -5,8 +5,10 @@ Copy data from this page: http://www.spaconference.org/scripts/proposals.php int
 
 ## Get list of all sessions with users and email addresses
 
+```
    mkdir output
    tools/prune_submissions.sh
+```
 
 **NB** this step is required for subsequent steps.
 
