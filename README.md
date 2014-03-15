@@ -2,7 +2,7 @@
 
 ## Set up
 Copy data from this page: http://www.spaconference.org/scripts/proposals.php into data/allproposals.txt and the list of users into data/users.txt.
-Make the first entry the top row.
+Make the first entry the top row and remove blank lines.
 
 ## Get list of all sessions with users and email addresses
 

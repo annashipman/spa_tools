@@ -22,7 +22,6 @@ awk '{ print $2 "	" $3 }' < data/users.txt > output/names_and_emails.txt
 echo "Concatenating email addresses with other data..."
 while read name rest
 do
-  echo $name
   name_plus_email=$(grep -w "$name" output/names_and_emails.txt)
   echo "$name_plus_email "$'\t'" $rest"
 
