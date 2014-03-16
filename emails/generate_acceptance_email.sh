@@ -19,6 +19,7 @@ Email address: $email_address
 Dear $name,
 
 We are pleased to let you know that your session $session has been accepted for SPA 2014.
+
 What happens next?
 
 Things to do immediately:
